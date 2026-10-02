@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Mahak 💗</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #fff7f4;
+            color: #3d3032;
+            font-family: Georgia, serif;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 18px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card {
+            width: min(430px, 100%);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #ffd9e2;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font: bold 12px Arial;
+            letter-spacing: 2px;
+            color: #754f59;
+        }
+
+        h1 {
+            font-size: clamp(45px, 13vw, 70px);
+            line-height: .95;
+            margin: 20px 0 10px;
+        }
+
+        .pink {
+            color: #d85e7b;
+        }
+
+        .script {
+            font-size: 24px;
+            color: #c25e79;
+            font-style: italic;
+        }
+
+        p {
+            font: 16px/1.6 Arial, sans-serif;
+            color: #695b5f;
+        }
+
+        button {
+            border: none;
+            background: #e87997;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 8px 20px #e8799740;
+        }
+
+        button:hover {
+            transform: scale(1.04);
+        }
+
+        .flowers {
+            font-size: 35px;
+            margin-top: 25px;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        .h1 {
+            top: 8%;
+            left: 8%;
+        }
+
+        .h2 {
+            top: 15%;
+            right: 8%;
+        }
+
+        .h3 {
+            bottom: 10%;
+            left: 8%;
+        }
+
+        .h4 {
+            bottom: 15%;
+            right: 8%;
+        }
+
+        @keyframes float {
+            50% {
+                transform: translateY(-10px) rotate(8deg);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .photo-frame {
+            background: white;
+            padding: 10px 10px 35px;
+            width: min(290px, 80vw);
+            margin: 25px auto;
+            box-shadow: 0 12px 35px #6b495025;
+            transform: rotate(-2deg);
+            position: relative;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            display: block;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+        }
+
+        .photo-name {
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            right: 0;
+            font-size: 18px;
+        }
+
+        .note {
+            background: white;
+            border: 2px dashed #efb3c1;
+            border-radius: 22px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 390px;
+        }
+
+        .small {
+            font-size: 13px;
+            color: #907c82;
+        }
+
+        .reveal {
+            animation: reveal .7s ease;
+        }
+
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* PHONE FIRST */
+@media (max-width: 600px) {
+
+    .page {
+        min-height: 100svh;
+        padding: 25px 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .script {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .photo-frame {
+        width: 250px;
+        padding: 8px 8px 30px;
+    }
+
+    .photo-name {
+        font-size: 16px;
+    }
+
+    .note {
+        padding: 16px;
+        margin: 18px 0;
+    }
+
+    button {
+        padding: 14px 22px;
+        font-size: 14px;
+    }
+
+    .heart {
+        font-size: 24px;
+    }
+
+    .h1 {
+        left: 3%;
+    }
+
+    .h2 {
+        right: 3%;
+    }
+
+    .h3 {
+        left: 3%;
+    }
+
+    .h4 {
+        right: 3%;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- FIRST PAGE -->
+    <section class="page" id="home">
+
+        <span class="heart h1">♡</span>
+        <span class="heart h2">✦</span>
+        <span class="heart h3">♡</span>
+        <span class="heart h4">✿</span>
+
+        <div class="card">
+
+            <span class="tag">A LITTLE SURPRISE</span>
+
+            <h1>
+                Hey<br>
+                Mahak!
+            </h1>
+
+            <div class="script">
+                someone made this just for you ♡
+            </div>
+
+            <p>
+                There's a tiny birthday surprise waiting
+                behind this button...
+            </p>
+
+            <button onclick="openGift()">
+                Open your surprise 🎁
+            </button>
+
+            <div class="flowers">
+                🌷 ♡ 🌷
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- BIRTHDAY PAGE -->
+    <section class="page hidden" id="birthday">
+
+        <span class="heart h1">♡</span>
+        <span class="heart h2">✦</span>
+
+        <div class="card reveal">
+
+            <span class="tag">02 • OCTOBER</span>
+
+            <h1>
+                HAPPY<br>
+                BIRTHDAY<br>
+                <span class="pink">MAHAK!</span>
+            </h1>
+
+
+            <!-- PHOTO -->
+            <div class="photo-frame">
+
+                <img src="mahak.jpeg" alt="Mahak">
+
+                <div class="photo-name">
+                    ♡ Mahak ♡
+                </div>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+            <div class="note">
+
+                <div class="flowers">
+                    🌸 ✨ 🌸
+                </div>
+
+                <p>
+                    May your days be full of little moments
+                    that make you smile, dreams that make you
+                    excited, and people who make life feel
+                    a little warmer.
+                </p>
+
+                <p>
+                    <b>Keep being you. ♡</b>
+                </p>
+
+                <div class="flowers">
+                    🎀 🧁 🎀
+                </div>
+
+            </div>
+
+
+            <p class="small">
+                Now close your eyes, make a wish,
+                and blow out the imaginary candles. ✨
+            </p>
+
+
+            <button onclick="makeWish()">
+                Make a wish ✨
+            </button>
+
+
+            <div id="finalMessage" class="hidden">
+
+                <div class="script">
+                    I hope this year is kind to you. ♡
+                </div>
+
+                <p>
+                    Happy Birthday once again, Mahak! 🎂
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        function openGift() {
+
+            document.getElementById("home").classList.add("hidden");
+
+            document.getElementById("birthday").classList.remove("hidden");
+
+            window.scrollTo(0, 0);
+        }
+
+
+        function makeWish() {
+
+            document
+                .getElementById("finalMessage")
+                .classList.remove("hidden");
+
+
+            // Falling hearts
+            for (let i = 0; i < 30; i++) {
+
+                let heart = document.createElement("span");
+
+                heart.innerHTML =
+                    ["♡", "✦", "🌸", "🎀"][i % 4];
+
+                heart.style.position = "fixed";
+                heart.style.left =
+                    Math.random() * 100 + "vw";
+
+                heart.style.top = "-20px";
+
+                heart.style.fontSize = "25px";
+
+                heart.style.zIndex = "100";
+
+                heart.style.animation =
+                    "fall " +
+                    (1.5 + Math.random() * 2) +
+                    "s linear forwards";
+
+                document.body.appendChild(heart);
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 4000);
+            }
+        }
+
+
+        // Falling animation
+        const style = document.createElement("style");
+
+        style.innerHTML = `
+            @keyframes fall {
+                to {
+                    transform:
+                        translateY(110vh)
+                        rotate(360deg);
+
+                    opacity: 0;
+                }
+            }
+        `;
+
+        document.head.appendChild(style);
+
+    </script>
+
+</body>
+</html>
